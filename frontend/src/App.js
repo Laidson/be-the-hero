@@ -1,26 +1,30 @@
+//JSX (javaScript XML)
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+import './global.css';
+
+import Routes from './routes';
+
+/**toda vez que meu precisar armazenar uma informação dentro dele
+ * criaremos sempre um estado 'const [counter, setCounter] = useState(0);'
+ * pq conseguimis atualizar a informção ao mesmo tempo que ela reflete as
+ * alterações dentro da interface
+ * 
+ *   const [counter, setCounter] = useState(0);
+
+  function increment() {
+    setCounter(counter + 1);
+  }
+   <div>
+      <Header>Contador: {counter}</Header>   
+      <button onClick={increment}>Incrementar</button>
+    </div>  
+*/
+
+function App() {  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Hellow people
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Routes />
+    );
 }
 
 export default App;

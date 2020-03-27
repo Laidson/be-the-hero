@@ -1,5 +1,6 @@
 const express = require('express');
-const routes = require('./routes'); 
+const routes = require('./routes');
+const cors = require('cors');
 /**
  * tem que se usar o ./ para indicar o arquivo
  * quando indica um pacote como o caso do express
